@@ -53,8 +53,13 @@ public class Celular {
 
     }
 
-    public void carregarCelular(){
-        this.bateria.carregarBateria();
+    public void carregarCelular() {
+        this.bateria.carregarBateria(); // This calls the no-arg battery method
+        System.out.println("Carga completa.");
+    }
+
+    public void carregarCelular(int quantidade){
+        this.bateria.carregarBateria(quantidade);
         System.out.println("Carga completa.");
 
     }
